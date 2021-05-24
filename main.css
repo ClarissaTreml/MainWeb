@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.booktitle{
+    line-height: 50px;
+}
+header{
+    padding: 10px;
+    background-color: lightgrey;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    position:fixed;
+    z-index: 1;
+}
+.imageheader{
+    width: 20px;
+    height: 20px;
+}
+nav {
+    top: 50px;
+    background-color:lightyellow;
+    width: 150px;
+    height: 100%;
+    position:fixed;
+    padding-top: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+li a{
+    color:black;
+}
+li:hover{
+    background-color: #666666;
+}
+li:hover a{
+    color: #fff;
+}
+
+main {
+    left: 150px;
+    top: 60px;
+    position: absolute;
+    overflow: auto;
+    bottom: 80px;
+    padding: 10px;
+}
+.description{
+    padding: 15px;
+}
+.isbn{
+    padding-bottom: 50px;
+}
+.imagebook{
+    width: 180px;
+    height: 230px;
+}
+aside{
+    background-color: yellow;
+    float: right;
+    top: 50px;
+    right: 0;
+    padding: 10px;
+    margin-right: 15px;
+    width: 200px;
+    height: 80px;
+    border: 6px solid black;
+    position:fixed;
+    font-family: "Comic Sans MS";
+}
+aside > p{
+    text-align: right;
+}
+footer{
+    background-color: lightgrey;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    line-height: 1.2;
+    position:fixed;
+    clear: both;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        overflow: hidden;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        float: none;
+    }
+    .navheader {text-align: center;}
+    .navlist li {
+        display: inline-flex;
+        padding: 5px;
+    }
+    main {top: 140px; left: 0;}
+    aside {top: 140px;}
+}
+

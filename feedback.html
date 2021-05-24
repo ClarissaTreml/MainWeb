@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="feedback.css">
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+</head>
+<header>
+    <h1>Website Feedback Form</h1>
+</header>
+<body>
+    <p>Is this the first time you have visited the website?</p>
+
+    <label for="y">
+        <input type= "radio" value= "yes" name="visit" id="y"/>
+        yes
+    </label>
+
+    <label for="n">
+        <input type= "radio" value= "no" name="visit" id="n"/>
+        no
+    </label>
+
+    <p>What is the PRIMARY reason you came to the site?</p>
+    <textarea name="text" rows="5" id="reason"></textarea>
+
+    <p>Did you find what you needed?</p>
+
+    <label for="yes">
+        <input type= "radio" value= "yes" name="find" id="yes">
+        Yes, all of it</label>
+
+    <label for="some">
+        <input type= "radio" value= "some" name="find" id="some">
+        Yes, some of it</label>
+
+    <label for="no">
+        <input type= "radio" value= "no" name="find" id="no">
+        No, none of it</label>
+
+    <p>If you did not find any or all of what you needed, please tell
+    us what information you were looking for.</p>
+    <textarea name="text" rows="5" id="lookingfor"></textarea>
+
+
+    <p>Please tell us how easy it is to find information on the site.</p>
+
+    <label for="veryeasy">
+        <input type= "radio" value= "veryeasy" name="information" id="veryeasy">
+        Very Easy</label>
+
+    <label for="easy">
+        <input type= "radio" value= "easy" name="information" id="easy">
+        Easy</label>
+
+    <label for="average">
+        <input type= "radio" value= "average" name="information" id="average">
+        Average</label>
+
+    <label for="difficult">
+        <input type= "radio" value= "difficult" name="information" id="difficult">
+        Difficult</label>
+
+    <label for="verydifficult">
+        <input type= "radio" value= "verydifficult" name="information" id="verydifficult">
+        Very Difficult</label>
+
+    <p>What is your overall impression of the site?</p>
+    <table cellspacing="0">
+        <tr>
+            <th></th>
+            <th>Below Expectations</th>
+            <th>Meets Expectations</th>
+            <th>Exceeds Expectations</th>
+        </tr>
+        <tr>
+            <td>Professional</td>
+            <td><input type= "radio" value= "below" name="professional" id="belowprof"></td>
+            <td><input type= "radio" value= "meets" name="professional" id="meetsprof"></td>
+            <td><input type= "radio" value= "exceeds" name="professional" id="exceedsprof"></td>
+        </tr>
+        <tr>
+            <td>Informative</td>
+            <td><input type= "radio" value= "below" name="informative" id="belowinfo"></td>
+            <td><input type= "radio" value= "meets" name="informative" id="meetsinfo"></td>
+            <td><input type= "radio" value= "exceeds" name="informative" id="exceedsinfo"></td>
+        </tr>
+        <tr>
+            <td>Visually Pleasing</td>
+            <td><input type= "radio" value= "below" name="visually" id="belowvisual"></td>
+            <td><input type= "radio" value= "meets" name="visually" id="meetsvisual"></td>
+            <td><input type= "radio" value= "exceeds" name="visually" id="exceedsvisual"></td>
+        </tr>
+    </table>
+
+
+    <p>What is the likelihood that you will visit the website again?</p>
+
+    <label for="extremely">
+        <input type= "radio" value= "extermely" name="visitagain" id="extremely">
+        Extremely likely</label>
+
+    <label for="very">
+        <input type= "radio" value= "very" name="visitagain" id="very">
+        Very likely</label>
+
+    <label for="moderate">
+        <input type= "radio" value= "moderate" name="visitagain" id="moderate">
+        Moderately likely</label>
+
+    <label for="slightly">
+        <input type= "radio" value= "slightly" name="visitagain" id="slightly">
+        Slightly likely</label>
+
+    <label for="not">
+        <input type= "radio" value= "not" name="visitagain" id="not">
+        Not at all likely</label>
+
+    <p>Please add any comments you have for improving the website. We
+    welcome suggestions on specific areas for improvements, features
+    you would like to see added to the site, and examples of what you
+    consider good websites.</p>
+    <textarea name="text" rows="5" id="comment"></textarea>
+
+    <p>We would like to know a little bit about you</p>
+    <form class="form-horizontal" action="/action_page.php" method="post">
+        <label for="eMail">
+            eMail:
+            <input type="email" id="eMail" placeholder="user@example.com" required>
+        </label><br/>
+
+        <label for="URL">
+            Your Homepage:
+            <input type="url" id="URL" placeholder="www.example.com">
+        </label><br/>
+
+        <label for="date">
+            Date of birth:
+            <input type = "date" name="date" id="date">
+        </label><br/>
+
+    <div id="send" name="send" class="send">
+        <button type="submit" formaction="main.html">Send</button>
+    </div>
+
+    </form>
+
+</body>
+</html>

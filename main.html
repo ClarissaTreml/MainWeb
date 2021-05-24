@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>Bookstore</title>
+</head>
+
+<body>
+<header>
+    <h1>Bookshop
+        <img src="Bookstore.jpg" class="imageheader" srcset="Bookstore.jpg 256w, Bookstore.jpg 512w,
+        Bookstore.jpg 1024w, Bookstore.jpg 2048w" alt="Books">
+    </h1>
+</header>
+<div id="container">
+<nav>
+    <h2 class="navheader">Categories</h2>
+    <ul class="navlist" style="list-style-type:none;">
+        <li><a href="#html">HTML 5</a></li>
+        <li><a href="#java">Javascript</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="https://www.amazon.de" target="_blank">Browse Amazon</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="upandrunning">
+        <h1 id="html">HTML Books</h1>
+            <article>
+                <h2 class="booktitle">Html5: Up And Running</h2>
+
+                <img src="HTML5_Up_And_Running.jpg" class="imagebook" srcset="HTML5_Up_And_Running.jpg 256w, HTML5_Up_And_Running.jpg 512w,
+                HTML5_Up_And_Running.jpg 1024w, HTML5_Up_And_Running.jpg 2048w" alt="HTML5 Up and running image">
+
+                <label> Quantity:</label>
+                <select element = "number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <input type="submit" name="submit" value="Add to Shopping Cart">
+
+
+                <p>24.8 €</p>
+                <p class="description">If you don't know about the new features available in HTML5,
+                now's the time to find out. The latest version of this markup
+                language is going to significantly change the way you develop
+                web applications, and this book provides your first real look
+                at HTML5's new elements and attributes.</p>
+                <p class="isbn">ISBN-13: 978-0596806026</p>
+            </article>
+            <article id="pocketreference">
+                <h2 class="booktitle">HTML5 Pocket Reference</h2>
+
+                <img src="HTML5_Pocket_Reference.jpg" class="imagebook" srcset="HTML5_Pocket_Reference.jpg 256w, HTML5_Pocket_Reference.jpg 512w,
+                    HTML5_Pocket_Reference.jpg 1024w, HTML5_Pocket_Reference.jpg 2048w" alt="HTML5 Pocket Reference image">
+                <label> Quantity:</label>
+                <select element = "number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <input type="submit" value="Add to Shopping Cart">
+
+                <p>15.9 €</p>
+                <p class="description">Need help finding the right HTML5 element or attribute for your web
+                    page or application? HTML5 Pocket Reference is the classic reference
+                    that web designers and developers have been keeping close at hand for
+                more than thirteen years.</p>
+                <p class="isbn">ISBN-13: 978-1449363352</p>
+            </article>
+
+        <h1 id="java">Java Script Books</h1>
+            <article id="javascript">
+                <h2 class="booktitle">Java Script</h2>
+
+                <img src="JavaScript 1.jfif" class="imagebook" srcset="JavaScript 1.jfif 256w, JavaScript 1.jfif 512w,
+                    JavaScript 1.jfif 1024w, JavaScript 1.jfif 2048w" alt="JavaScript 1 image">
+
+
+                    <label> Quantity:</label>
+                    <select element = "number">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input type="submit" value="Add to Shopping Cart">
+
+
+                <p>47.3 €</p>
+                <p class="description">Since 1996, JavaScript: The Definitive Guide has been the bible
+                for JavaScript programmersa programmers's guide and comprehensive
+                reference to the core language and to the client-side JavaScript
+                APIs defined by web browsers.</p>
+                <p class="isbn">ISBN-13: 9781449308162</p>
+            </article>
+
+            <article id="thegoodparts">
+                <h2 class="booktitle">Java Script: The good parts</h2>
+
+                <img src="Java Script 2.jfif" class="imagebook" srcset="Java Script 2.jfif 256w, Java Script 2.jfif 512w,
+                    Java Script 2.jfif 1024w, Java Script 2.jfif 2048w" alt="Java Script 2 image">
+
+                <label> Quantity:</label>
+                <select element = "number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <input type="submit" value="Add to Shopping Cart">
+
+                <p>23.9 €</p>
+                <p class="description">Most programming languages contain good and bad parts, but JavaScript
+                hast more than its share of the bad, having been developed and released
+                in a hurry before it could be refined.</p>
+                <p class="isbn">ISBN-13: 0596517742</p>
+            </article>
+    </section>
+</main>
+<aside id="shoppingcart">
+    <h2>Shopping Cart</h2>
+        <p class="sum">Sum: 0 €</p>
+</aside>
+</div>
+<footer>
+    <address id="footer">
+        <p>Written by <a href="mailto:maxmustermann@example.com"> MaxMustermann.</a></p>
+        <p>
+            Visit us at: example.com<br>
+            1100, Vienna<br>
+            Austria<br>
+        </p>
+    </address>
+</footer>
+</body>
+</html>
